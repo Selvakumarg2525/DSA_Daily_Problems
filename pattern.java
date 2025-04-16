@@ -262,6 +262,48 @@ public class pattern {
             }
             System.out.println();
         }
+        static void pattern_19(){
+        int n=5;
+        for(int e=0;e<n;e++){
+            for(int f=0;f<=e;f++){
+                System.out.print("*");
+            }
+            for(int g=0;g<2*(n-(e+1));g++){
+                System.out.print(" ");
+            }
+            for(int f=0;f<=e;f++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int a=1;a<n;a++){
+            for(int b=a;b<n;b++){
+                System.out.print("*");
+            }
+            for(int c=0;c<2*a;c++){
+                System.out.print(" ");
+            }
+            for(int d=a;d<n;d++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern_20(){
+        int n=5;
+        for(int a=0;a<n;a++){
+            for(int b=0;b<n;b++){
+                if(a==0||a==n-1||b==0||b==n-1){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String args[]){
         pattern_18();
     }
